@@ -15,3 +15,9 @@ Un modèle 3D est essentiellement composé de deux types d'informations : les at
 [ Inspector ]
 
 L'inspecteur web, notamment le Moniteur "Réseau" Network, permet d'examiner les requêtes réseau émises par un site web et leurs réponses. Cela nous aide à localiser les données que nous cherchons.
+
+[ Trouver les données ]
+En triant les requêtes par taille décroissante, nous repérons un fichier ".mview" (Pour marmoset viewer ) de grande taille, qui est susceptible de contenir les données 3D que nous recherchons.
+
+[ Code source de Marmoset ]
+Nous examinons le code source du Marmoset Viewer, qui n'est pas complètement obscurci. Les noms de fonctions ont du sens, bien que certaines variables soient représentées par des lettres (a, b, c, d, etc.). Cela nous aide à comprendre comment les données sont utilisées.
