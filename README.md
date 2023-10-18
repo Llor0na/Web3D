@@ -1,5 +1,5 @@
 # Web3D
-Ce projet vise à extraire des données 3D à partir de sites web tels que Google Maps, Sketchfab et Marmoset Viewer. 
+Ce projet vise à extraire des models 3D à partir de sites web tels que Google Maps, Sketchfab et Marmoset Viewer. 
 
 L'idée clé est que si vous pouvez voir ces objets sur votre ordinateur, vous pouvez également les enregistrer, un peu comme prendre une photo en ligne. 
 
