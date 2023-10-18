@@ -7,3 +7,9 @@ Cette initiative constitue une base pour explorer davantage la récupération de
 
 ![anonymous-hacker-3d-model](https://github.com/Llor0na/Web3D/assets/118251856/3118eff1-c827-4534-9368-5be9c658e45b)
 An essential mantra for every savvy hacker: whatever data your computer perceives, you too can unearth and preserve.
+
+[ Mesh data ]
+Un modèle 3D est essentiellement composé de deux types d'informations : les attributs des points (position, couleur, coordonnées de texture, etc.) et la topologie (relations entre les points). Notre objectif est de trouver et d'exporter ces deux types de données.
+
+[ Inspecteur du navigateur ]
+L'inspecteur du navigateur, notamment le Moniteur Réseau, permet d'examiner les requêtes réseau émises par un site web et leurs réponses. Cela nous aide à localiser les données que nous cherchons.
