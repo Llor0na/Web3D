@@ -6,5 +6,4 @@ L'idée clé est que si vous pouvez voir ces objets sur votre ordinateur, vous p
 Cette initiative constitue une base pour explorer davantage la récupération de models 3D sur le web en comprenant le fonctionnement de chaque source.
 
 ![anonymous-hacker-3d-model](https://github.com/Llor0na/Web3D/assets/118251856/3118eff1-c827-4534-9368-5be9c658e45b)
-
-What data your computer sees, you can see it as well and save it .
+Any good hacker keeps in mind: what data your computer sees, you can see it as well and save it. 
