@@ -6,3 +6,5 @@ L'idée clé est que si vous pouvez voir ces objets sur votre ordinateur, vous p
 Chaque site web a sa propre manière de stocker ces objets 3D, ce qui nécessite de comprendre leurs règles spécifiques.
 
 Cette initiative constitue une base pour explorer davantage la récupération de données 3D sur le web, en prenant en compte les particularités de chaque source de données.
+
+![image](https://github.com/Llor0na/Web3D/assets/118251856/a72eff84-91bd-49e1-aae8-79552c05abfb)
