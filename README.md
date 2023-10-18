@@ -1,4 +1,4 @@
-# Marmoset
+# WebGL
 Ce projet explore la possibilité d'extraire des données 3D à partir de sources web, telles que Google Maps, Sketchfab et Marmoset Viewer. 
 
 Il repose sur le principe fondamental selon lequel ce que l'ordinateur du client voit, l'utilisateur peut également voir et sauvegarder.
