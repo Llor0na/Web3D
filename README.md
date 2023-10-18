@@ -14,4 +14,4 @@ Un modèle 3D est essentiellement composé de deux types d'informations : les at
 
 [ Inspector ]
 
-L'inspecteur web, notamment le Moniteur Réseau, permet d'examiner les requêtes réseau émises par un site web et leurs réponses. Cela nous aide à localiser les données que nous cherchons.
+L'inspecteur web, notamment le Moniteur Réseau [Network], permet d'examiner les requêtes réseau émises par un site web et leurs réponses. Cela nous aide à localiser les données que nous cherchons.
