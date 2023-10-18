@@ -22,4 +22,4 @@ En triant les requêtes par taille décroissante, nous repérons un fichier ".mv
 
 [ Code source de Marmoset ]
 
-Nous examinons le code source du Marmoset Viewer. Les noms de fonctions ont du sens, bien que certaines variables soient représentées par des lettres (a, b, c, d, etc.). Cela nous aide à comprendre comment les données sont utilisées (Inspecteur : l'onglet Débogueur : {} ).
+Nous examinons le code source du Marmoset Viewer "marmoset.js". Les noms de fonctions ont du sens, bien que certaines variables soient représentées par des lettres (a, b, c, d, etc.). Cela nous aide à comprendre comment les données sont utilisées (Inspecteur : l'onglet Débogueur : {} ).
