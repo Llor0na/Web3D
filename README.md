@@ -12,6 +12,6 @@ An essential mantra for every savvy hacker: whatever data your computer perceive
 
 Un modèle 3D est essentiellement composé de deux types d'informations : les attributs des points (position, couleur, coordonnées de texture, etc.) et la topologie (relations entre les points). Notre objectif est de trouver et d'exporter ces deux types de données.
 
-[ Web Inspector ]
+[ Inspector ]
 
 L'inspecteur web, notamment le Moniteur Réseau, permet d'examiner les requêtes réseau émises par un site web et leurs réponses. Cela nous aide à localiser les données que nous cherchons.
