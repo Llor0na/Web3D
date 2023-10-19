@@ -42,4 +42,7 @@ Dans Source "débogueur" Nous examinons le code source du Marmoset Viewer "marmo
     Analyse du Contenu :
         Le fichier mview est un fichier binaire, mais nous pouvons déjà identifier certaines parties, comme le nom des fichiers et leur type MIME.
         Nous pouvons également obtenir des informations sur la taille des fichiers et leur taille brute.
-        Cette étape nous permet de comprendre ce que contient le fichier mview.
+        Cette étape 
+nous permet de comprendre ce que contient le fichier mview.
+
+![anonymous-3d-model](https://github.com/Llor0na/Web3D/assets/118251856/57643231-eb35-4da1-9bb7-e33fb9a98e95)
