@@ -1,7 +1,7 @@
 # Web3D
 Ce projet vise à extraire des données 3D à partir de sites web tels que Marmoset Viewer, Sketchfab et Google Maps. 
 
-L'idée clé est que si vous pouvez voir ces models sur votre ordinateur, vous pouvez également les enregistrer, un peu comme prendre une photo en ligne. Chaque site web a sa propre manière de stocker ces models 3D, ce qui nécessite de comprendre leurs règles spécifiques.
+L'idée clé est que si vous pouvez voir ces models sur votre ordinateur, vous pouvez également les enregistrer, un peu comme prendre une photo en ligne. Chaque site web a sa propre manière de stocker ces objets 3D, ce qui nécessite de comprendre leurs règles spécifiques.
 
 
 ![anonymous-hacker-3d-model](https://github.com/Llor0na/Web3D/assets/118251856/3118eff1-c827-4534-9368-5be9c658e45b)
@@ -36,6 +36,4 @@ La classe Archive agit comme un décodeur ZIP, lisant les fichiers concaténés 
 
 5. Analyse du Contenu : Le fichier mview est un fichier binaire, mais nous pouvons déjà identifier certaines parties, comme le nom des fichiers et leur type MIME.
 Nous pouvons également obtenir des informations sur la taille des fichiers et leur taille brute.
-
-Cette étape nous permet de comprendre ce que contient le fichier mview.
 
