@@ -45,4 +45,5 @@ Dans Source "débogueur" Nous examinons le code source du Marmoset Viewer "marmo
         Cette étape 
 nous permet de comprendre ce que contient le fichier mview.
 
-![anonymous-3d-model](https://github.com/Llor0na/Web3D/assets/118251856/57643231-eb35-4da1-9bb7-e33fb9a98e95)
+
+![anonymous-3d-model](https://github.com/Llor0na/Web3D/assets/118251856/2bb7e07f-59eb-4981-97e9-f006d13356ef)
