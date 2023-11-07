@@ -8,24 +8,25 @@ L'idée clé est que si vous pouvez voir ces models sur votre ordinateur, vous p
 
 An essential mantra for every savvy hacker: whatever data your computer perceives, you too can unearth and preserve. 
 
---- Mesh data 
+--- 
+
+***Mesh data*** 
 
 Un modèle 3D est essentiellement composé de deux types d'informations : les attributs des points (position, couleur, coordonnées de texture, etc.) et la topologie (relations entre les points). Notre objectif est de trouver et d'exporter ces deux types de données.
 
-#
-[ Inspector ]
+***Inspector***
 
 L'inspecteur web, notamment le Moniteur Réseau, permet d'examiner les requêtes réseau émises par un site web et leurs réponses. Cela nous aide à localiser les données que nous cherchons.
 
-#
-[ Network ] 
+***Network*** 
 
 Dans le Moniteur Réseau, En triant les requêtes par taille décroissante, nous repérons un fichier ".mview" ( Marmoset Viewer ) de grande taille, qui est susceptible de contenir les données 3D que nous recherchons. (Copier > url pour télécharger le fichier mview)
---
-[ Débogueur ]
+
+***Débogueur***
 
 Nous examinons le code source du Marmoset Viewer "marmoset.js". Les noms de fonctions ont du sens, bien que certaines variables soient représentées par des lettres (a, b, c, d, etc.). Cela nous aide à comprendre comment les données sont utilisées (Inspecteur > l'onglet Débogueur > {} pour prettifier ).
 
+===
 1. Point d'Entrée : Repérer les requêtes réseau, car le fichier mview est chargé par le visualiseur via une fonction JavaScript appelée XMLHttpRequest.
 
 2. Rechercher les Requêtes : Nous trouvons huit utilisations de XMLHttpRequest, mais nous nous concentrons sur les fonctions génériques fetchText(), fetchBinary() et fetchBinaryIncremental, car elles semblent traiter des données binaires.
@@ -38,4 +39,4 @@ La classe Archive agit comme un décodeur ZIP, lisant les fichiers concaténés 
 
 5. Analyse du Contenu : Le fichier mview est un fichier binaire, mais nous pouvons déjà identifier certaines parties, comme le nom des fichiers et leur type MIME.
 Nous pouvons également obtenir des informations sur la taille des fichiers et leur taille brute.
-
+==
