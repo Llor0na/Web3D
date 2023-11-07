@@ -24,7 +24,7 @@ L'inspecteur web, notamment le Moniteur Réseau, permet d'examiner les requêtes
 [ Network ] 
 
 Dans le Moniteur Réseau, En triant les requêtes par taille décroissante, nous repérons un fichier ".mview" ( Marmoset Viewer ) de grande taille, qui est susceptible de contenir les données 3D que nous recherchons. (Copier > url pour télécharger le fichier mview)
---------------------
+--
 [ Débogueur ]
 
 Nous examinons le code source du Marmoset Viewer "marmoset.js". Les noms de fonctions ont du sens, bien que certaines variables soient représentées par des lettres (a, b, c, d, etc.). Cela nous aide à comprendre comment les données sont utilisées (Inspecteur > l'onglet Débogueur > {} pour prettifier ).
