@@ -8,9 +8,7 @@ L'idée clé est que si vous pouvez voir ces models sur votre ordinateur, vous p
 
 An essential mantra for every savvy hacker: whatever data your computer perceives, you too can unearth and preserve. 
 
---- 
-
-# Mesh data 
+--- Mesh data 
 
 Un modèle 3D est essentiellement composé de deux types d'informations : les attributs des points (position, couleur, coordonnées de texture, etc.) et la topologie (relations entre les points). Notre objectif est de trouver et d'exporter ces deux types de données.
 
