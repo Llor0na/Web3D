@@ -34,7 +34,7 @@ Dans le **débogueur**, nous examinons le code source du Marmoset Viewer "marmos
 ![image](https://github.com/Llor0na/Web3D/assets/118251856/3bf9e3a6-4e6a-4573-8a12-f504c29dbe06)
 
 
-## Start
+## Marmoset.js
 
 
 -  Point d'Entrée : Repérer les requêtes réseau, car le fichier mview est chargé par le visualiseur via une fonction JavaScript appelée XMLHttpRequest.
@@ -57,7 +57,7 @@ En examinant le contenu de fetchBinary(), nous remarquons que ses arguments sont
 -  Traitement des Données : Dans cette fonction de rappel, les données sont transmises à la méthode scene.load() en utilisant une classe appelée Archive.
 La classe Archive agit comme un décodeur ZIP, lisant les fichiers concaténés dans le fichier mview, les décompressant s'ils sont compressés et les stockant par nom.
 
-## Binary
+## .mview
 
 Analyse du Contenu : Le fichier mview est un fichier binaire, mais nous pouvons déjà identifier certaines parties, comme le nom des fichiers et leur type MIME.
 Nous pouvons également obtenir des informations sur la taille des fichiers et leur taille brute.
@@ -66,14 +66,33 @@ Git Bash
 ```
 xxd wooden_bat_360.mview | less
 ```
-![Capture d'écran](https://github.com/Llor0na/Web3D/assets/118251856/b2cc4432-3148-4517-ac21-cb2f20d97802)
 
 Powershell
 ```
 Get-Content -Encoding Byte -TotalCount 1000 wooden_bat_360.mview | Format-Hex | more
 ```
 
-![image](https://github.com/Llor0na/Web3D/assets/118251856/5ab424a0-d01c-472d-9201-471c2dad1e08)
+![Capture d'écran](https://github.com/Llor0na/Web3D/assets/118251856/b2cc4432-3148-4517-ac21-cb2f20d97802)
+
+## Python 
+```
+python list_marmoset_archive.py
+```
+![image](https://github.com/Llor0na/Web3D/assets/118251856/a2c7be8a-51de-4505-b079-db6732f9ebc2)
+
+- compressed (c, potentiellement b) :
+        Indique si le fichier est compressé. Le code utilise l'opération bool(compressed & 1) pour vérifier si le bit le moins significatif de compressed est défini.
+
+- size (d) :
+        Représente la taille du fichier. C'est la taille du fichier compressé si le fichier est compressé, sinon c'est la taille brute du fichier.
+
+- raw_size (e) :
+        Représente la taille (brute) décompressée du fichier. Si le fichier n'est pas compressé, la taille brute pourrait être égal à la taile.
+
+
+
+
+
 
 
 
