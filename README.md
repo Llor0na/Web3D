@@ -10,7 +10,7 @@ An essential mantra for every savvy hacker: whatever data your computer perceive
 
 --- 
 
-## [Mesh data](https://www.danthree.studio/fr/blog-cgi/qu%27est-ce-qu%27un-modèle-maillé-3d-définition-exemples) 
+## [Mesh data]([https://www.danthree.studio/fr/blog-cgi/qu%27est-ce-qu%27un-modèle-maillé-3d-définition-exemples](https://fr.wikipedia.org/wiki/Maillage_(structure_de_données))) 
 
 ![image](https://github.com/Llor0na/Web3D/assets/118251856/fe74d409-0218-40eb-a873-d341d9f4a4e1)
 
