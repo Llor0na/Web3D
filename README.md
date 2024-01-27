@@ -25,7 +25,7 @@ L'inspecteur web, notamment le Moniteur Réseau, permet d'examiner les requêtes
 
 ![image](https://github.com/Llor0na/Web3D/assets/118251856/a2515266-d824-4e7c-80fe-5f71f11360b5)
 
-Dans le Moniteur Réseau, En triant les requêtes par taille décroissante, nous repérons un fichier ".mview" ( Marmoset Viewer ) de grande taille, qui est susceptible de contenir les données 3D que nous recherchons. (Cliquer pour télécharger le fichier mview)
+En triant les requêtes par taille décroissante (size), nous repérons un fichier ".mview" ( Marmoset Viewer ) de grande taille, qui est susceptible de contenir les données 3D que nous recherchons. (Cliquer pour télécharger le fichier mview)
 
 ![image](https://github.com/Llor0na/Web3D/assets/118251856/558533a3-70f1-498d-a27a-91bb99e6880e)
 
@@ -41,9 +41,12 @@ Dans le **débogueur**, nous examinons le code source du Marmoset Viewer "marmos
 -  Point d'Entrée : Repérer les requêtes réseau, car le fichier mview est chargé par le visualiseur via une fonction JavaScript appelée XMLHttpRequest.
 
 -  Rechercher les Requêtes : Nous trouvons huit utilisations de XMLHttpRequest, mais nous nous concentrons sur les fonctions génériques fetchText(), fetchBinary() et fetchBinaryIncremental, car elles semblent traiter des données binaires.
+![image](https://github.com/Llor0na/Web3D/assets/118251856/f954c730-62f3-4d51-9e4d-c9f4da27d245)
 
 -  Analyser fetchBinary() : La fonction fetchBinary() est particulièrement intéressante, car elle est appelée à la fin de la fonction WebViewer.loadScene, ce qui est logique.
 En examinant le contenu de fetchBinary(), nous remarquons que ses arguments sont des fonctions de rappel (callbacks), et le deuxième argument est une fonction appelée lorsque le fichier est entièrement chargé.
+![image](https://github.com/Llor0na/Web3D/assets/118251856/979c6fff-f02c-43aa-a720-cf6250592420)
+
         
 -  Traitement des Données : Dans cette fonction de rappel, les données sont transmises à la méthode scene.load() en utilisant une classe appelée Archive.
 La classe Archive agit comme un décodeur ZIP, lisant les fichiers concaténés dans le fichier mview, les décompressant s'ils sont compressés et les stockant par nom.
