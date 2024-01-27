@@ -10,9 +10,10 @@ An essential mantra for every savvy hacker: whatever data your computer perceive
 
 --- 
 
-## [Mesh data]([https://www.danthree.studio/fr/blog-cgi/qu%27est-ce-qu%27un-modèle-maillé-3d-définition-exemples](https://fr.wikipedia.org/wiki/Maillage_(structure_de_données))) 
+## [Mesh data](https://fr.wikipedia.org/wiki/Maillage_(structure_de_données))
 
-![image](https://github.com/Llor0na/Web3D/assets/118251856/fe74d409-0218-40eb-a873-d341d9f4a4e1)
+![image](https://github.com/Llor0na/Web3D/assets/118251856/8232b2cd-b6ec-481d-aecf-a8d60e62d482)
+
 
 Un modèle 3D est essentiellement composé de deux types d'informations : les **attributs des points** (position, couleur, [coordonnées de texture](https://fr.wikipedia.org/wiki/Cartographie_UV), etc.) et la [topologie](https://youtu.be/cS_03N-e1h4?feature=shared) (relations entre les points). Notre objectif est de trouver et d'exporter ces deux types de données.
 
