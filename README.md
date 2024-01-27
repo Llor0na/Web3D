@@ -46,6 +46,7 @@ Dans le **débogueur**, nous examinons le code source du Marmoset Viewer "marmos
 
 
 -  Rechercher les Requêtes : Nous trouvons huit utilisations de XMLHttpRequest, mais nous nous concentrons sur les fonctions génériques fetchText(), fetchBinary() et fetchBinaryIncremental, car elles semblent traiter des données binaires.
+  
 ![image](https://github.com/Llor0na/Web3D/assets/118251856/f954c730-62f3-4d51-9e4d-c9f4da27d245)
 
 -  Analyser fetchBinary() : La fonction fetchBinary() est particulièrement intéressante, car elle est appelée à la fin de la fonction WebViewer.loadScene, ce qui est logique.
