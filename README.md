@@ -8,8 +8,6 @@ L'idée clé est que si vous pouvez voir ces models sur votre ordinateur, vous p
 
 An essential mantra for every savvy hacker: whatever data your computer perceives, you too can unearth and preserve. 
 
---- 
-
 ## [Mesh data](https://fr.wikipedia.org/wiki/Maillage_(structure_de_données))
 
 ![image](https://github.com/Llor0na/Web3D/assets/118251856/8232b2cd-b6ec-481d-aecf-a8d60e62d482)
