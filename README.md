@@ -14,7 +14,7 @@ An essential mantra for every savvy hacker: whatever data your computer perceive
 
 ![image](https://github.com/Llor0na/Web3D/assets/118251856/fe74d409-0218-40eb-a873-d341d9f4a4e1)
 
-Un modèle 3D est essentiellement composé de deux types d'informations : les **attributs des points** (position, couleur, coordonnées de texture, etc.) et la ***topologie*** (relations entre les points). Notre objectif est de trouver et d'exporter ces deux types de données.
+Un modèle 3D est essentiellement composé de deux types d'informations : les **attributs des points** (position, couleur, coordonnées de texture, etc.) et la [topologie](https://youtu.be/cS_03N-e1h4?feature=shared) (relations entre les points). Notre objectif est de trouver et d'exporter ces deux types de données.
 
 ## [Inspector](https://support.hostinger.com/fr/articles/2152545-comment-inspecter-les-elements-du-site-web)
 
@@ -39,7 +39,10 @@ Dans le **débogueur**, nous examinons le code source du Marmoset Viewer "marmos
 
 -  Point d'Entrée : Repérer les requêtes réseau, car le fichier mview est chargé par le visualiseur via une fonction JavaScript appelée XMLHttpRequest.
  
-![image](https://github.com/Llor0na/Web3D/assets/118251856/a8977d3b-e798-4945-bb42-dca14ae3235b)
+![image](https://github.com/Llor0na/Web3D/assets/118251856/65b759ab-1b7f-4b32-a3e3-52dc47c1a4da)
+
+
+
 
 
 -  Rechercher les Requêtes : Nous trouvons huit utilisations de XMLHttpRequest, mais nous nous concentrons sur les fonctions génériques fetchText(), fetchBinary() et fetchBinaryIncremental, car elles semblent traiter des données binaires.
@@ -53,18 +56,29 @@ En examinant le contenu de fetchBinary(), nous remarquons que ses arguments sont
 -  Traitement des Données : Dans cette fonction de rappel, les données sont transmises à la méthode scene.load() en utilisant une classe appelée Archive.
 La classe Archive agit comme un décodeur ZIP, lisant les fichiers concaténés dans le fichier mview, les décompressant s'ils sont compressés et les stockant par nom.
 
--  Analyse du Contenu : Le fichier mview est un fichier binaire, mais nous pouvons déjà identifier certaines parties, comme le nom des fichiers et leur type MIME.
+## Binary
+
+Analyse du Contenu : Le fichier mview est un fichier binaire, mais nous pouvons déjà identifier certaines parties, comme le nom des fichiers et leur type MIME.
 Nous pouvons également obtenir des informations sur la taille des fichiers et leur taille brute.
 
 Git Bash
 ```
 xxd wooden_bat_360.mview | less
 ```
+![Capture d'écran](https://github.com/Llor0na/Web3D/assets/118251856/b2cc4432-3148-4517-ac21-cb2f20d97802)
 
 Powershell
 ```
 Get-Content -Encoding Byte -TotalCount 1000 wooden_bat_360.mview | Format-Hex | more
 ```
-![image](https://github.com/Llor0na/Web3D/assets/118251856/dffb4c31-fc0e-4a9c-b321-5b666e737910)
+
+![image](https://github.com/Llor0na/Web3D/assets/118251856/5ab424a0-d01c-472d-9201-471c2dad1e08)
+
+
+
+
+
+
+
 
 
