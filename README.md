@@ -25,7 +25,7 @@ L'inspecteur web, notamment le Moniteur Réseau, permet d'examiner les requêtes
 
 ![image](https://github.com/Llor0na/Web3D/assets/118251856/a2515266-d824-4e7c-80fe-5f71f11360b5)
 
-Dans le Moniteur Réseau, En triant les requêtes par taille décroissante, nous repérons un fichier ".mview" ( Marmoset Viewer ) de grande taille, qui est susceptible de contenir les données 3D que nous recherchons. (Copier > url pour télécharger le fichier mview)
+Dans le Moniteur Réseau, En triant les requêtes par taille décroissante, nous repérons un fichier ".mview" ( Marmoset Viewer ) de grande taille, qui est susceptible de contenir les données 3D que nous recherchons. (télécharger le fichier mview)
 
 ![image](https://github.com/Llor0na/Web3D/assets/118251856/79256194-c3bf-4744-a6ad-a9757367ac26)
 
