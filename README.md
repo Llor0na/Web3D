@@ -12,8 +12,7 @@ An essential mantra for every savvy hacker: whatever data your computer perceive
 
 ## [Mesh data](https://www.danthree.studio/fr/blog-cgi/qu%27est-ce-qu%27un-modèle-maillé-3d-définition-exemples) 
 
-![image](https://github.com/Llor0na/Web3D/assets/118251856/da72cc77-af0c-40a9-af21-14b30e678950)
-
+![image](https://github.com/Llor0na/Web3D/assets/118251856/fe74d409-0218-40eb-a873-d341d9f4a4e1)
 
 Un modèle 3D est essentiellement composé de deux types d'informations : les **attributs des points** (position, couleur, coordonnées de texture, etc.) et la ***topologie*** (relations entre les points). Notre objectif est de trouver et d'exporter ces deux types de données.
 
@@ -39,6 +38,9 @@ Dans le **débogueur**, nous examinons le code source du Marmoset Viewer "marmos
 
 
 -  Point d'Entrée : Repérer les requêtes réseau, car le fichier mview est chargé par le visualiseur via une fonction JavaScript appelée XMLHttpRequest.
+ 
+![image](https://github.com/Llor0na/Web3D/assets/118251856/a8977d3b-e798-4945-bb42-dca14ae3235b)
+
 
 -  Rechercher les Requêtes : Nous trouvons huit utilisations de XMLHttpRequest, mais nous nous concentrons sur les fonctions génériques fetchText(), fetchBinary() et fetchBinaryIncremental, car elles semblent traiter des données binaires.
 ![image](https://github.com/Llor0na/Web3D/assets/118251856/f954c730-62f3-4d51-9e4d-c9f4da27d245)
@@ -53,4 +55,16 @@ La classe Archive agit comme un décodeur ZIP, lisant les fichiers concaténés 
 
 -  Analyse du Contenu : Le fichier mview est un fichier binaire, mais nous pouvons déjà identifier certaines parties, comme le nom des fichiers et leur type MIME.
 Nous pouvons également obtenir des informations sur la taille des fichiers et leur taille brute.
- 
+
+Git Bash
+```
+xxd wooden_bat_360.mview | less
+```
+
+Powershell
+```
+Get-Content -Encoding Byte -TotalCount 1000 wooden_bat_360.mview | Format-Hex | more
+```
+![image](https://github.com/Llor0na/Web3D/assets/118251856/dffb4c31-fc0e-4a9c-b321-5b666e737910)
+
+
